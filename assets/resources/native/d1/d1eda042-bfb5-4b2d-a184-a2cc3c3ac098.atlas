@@ -1,0 +1,132 @@
+
+Phantom.png
+size: 1024,272
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Back Coat
+  rotate: true
+  xy: 360, 146
+  size: 124, 324
+  orig: 137, 324
+  offset: 0, 0
+  index: -1
+Body
+  rotate: false
+  xy: 686, 87
+  size: 139, 183
+  orig: 139, 183
+  offset: 0, 0
+  index: -1
+L_ Hand
+  rotate: true
+  xy: 922, 93
+  size: 85, 84
+  orig: 113, 118
+  offset: 0, 11
+  index: -1
+L_ Hand_2
+  rotate: true
+  xy: 360, 81
+  size: 63, 102
+  orig: 77, 137
+  offset: 4, 35
+  index: -1
+L_Arm
+  rotate: true
+  xy: 464, 97
+  size: 47, 99
+  orig: 47, 99
+  offset: 0, 0
+  index: -1
+L_Coat
+  rotate: true
+  xy: 387, 2
+  size: 77, 336
+  orig: 77, 336
+  offset: 0, 0
+  index: -1
+L_Forearm_1_1
+  rotate: false
+  xy: 827, 156
+  size: 93, 114
+  orig: 93, 129
+  offset: 0, 15
+  index: -1
+L_Forearm_1_2
+  rotate: true
+  xy: 848, 10
+  size: 76, 114
+  orig: 93, 129
+  offset: 17, 15
+  index: -1
+R_ Hand
+  rotate: true
+  xy: 280, 7
+  size: 68, 105
+  orig: 82, 142
+  offset: 10, 0
+  index: -1
+R_Arm
+  rotate: true
+  xy: 827, 88
+  size: 66, 92
+  orig: 66, 93
+  offset: 0, 0
+  index: -1
+R_Coat
+  rotate: true
+  xy: 2, 77
+  size: 193, 356
+  orig: 193, 356
+  offset: 0, 0
+  index: -1
+R_Forearm_1
+  rotate: true
+  xy: 161, 7
+  size: 68, 117
+  orig: 81, 133
+  offset: 11, 16
+  index: -1
+R_Forearm_2
+  rotate: true
+  xy: 725, 7
+  size: 78, 121
+  orig: 81, 133
+  offset: 1, 12
+  index: -1
+eyes_1
+  rotate: false
+  xy: 633, 90
+  size: 21, 22
+  orig: 24, 24
+  offset: 1, 1
+  index: -1
+eyes_2
+  rotate: true
+  xy: 633, 114
+  size: 30, 22
+  orig: 33, 25
+  offset: 1, 1
+  index: -1
+face
+  rotate: true
+  xy: 565, 89
+  size: 55, 66
+  orig: 55, 66
+  offset: 0, 0
+  index: -1
+hat
+  rotate: false
+  xy: 922, 180
+  size: 100, 90
+  orig: 108, 102
+  offset: 8, 0
+  index: -1
+shoulder
+  rotate: false
+  xy: 2, 4
+  size: 157, 71
+  orig: 157, 75
+  offset: 0, 4
+  index: -1

@@ -1,0 +1,20 @@
+
+Choang.png
+size: 316,316
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+ring
+  rotate: false
+  xy: 2, 33
+  size: 280, 280
+  orig: 280, 280
+  offset: 0, 0
+  index: -1
+star
+  rotate: false
+  xy: 2, 2
+  size: 30, 29
+  orig: 30, 29
+  offset: 0, 0
+  index: -1

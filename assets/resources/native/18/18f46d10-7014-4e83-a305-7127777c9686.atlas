@@ -1,0 +1,300 @@
+
+Mad_scientist.png
+size: 685,523
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Curves 1 copy
+  rotate: false
+  xy: 618, 194
+  size: 60, 72
+  orig: 76, 72
+  offset: 0, 0
+  index: -1
+Layer 1
+  rotate: false
+  xy: 103, 249
+  size: 174, 272
+  orig: 174, 272
+  offset: 0, 0
+  index: -1
+arm_1
+  rotate: false
+  xy: 524, 326
+  size: 73, 126
+  orig: 73, 126
+  offset: 0, 0
+  index: -1
+arm_2
+  rotate: true
+  xy: 345, 28
+  size: 54, 102
+  orig: 54, 102
+  offset: 0, 0
+  index: -1
+axit
+  rotate: true
+  xy: 493, 129
+  size: 61, 93
+  orig: 63, 95
+  offset: 1, 1
+  index: -1
+beard
+  rotate: true
+  xy: 108, 3
+  size: 148, 49
+  orig: 148, 49
+  offset: 0, 0
+  index: -1
+blouse_1
+  rotate: false
+  xy: 2, 149
+  size: 99, 372
+  orig: 99, 372
+  offset: 0, 0
+  index: -1
+blouse_2
+  rotate: true
+  xy: 279, 454
+  size: 67, 322
+  orig: 67, 322
+  offset: 0, 0
+  index: -1
+body
+  rotate: true
+  xy: 279, 321
+  size: 131, 243
+  orig: 131, 243
+  offset: 0, 0
+  index: -1
+ears_1
+  rotate: true
+  xy: 575, 55
+  size: 33, 45
+  orig: 33, 45
+  offset: 0, 0
+  index: -1
+eyebrow_1
+  rotate: true
+  xy: 449, 53
+  size: 35, 32
+  orig: 35, 32
+  offset: 0, 0
+  index: -1
+eyebrow_2
+  rotate: true
+  xy: 344, 2
+  size: 24, 25
+  orig: 24, 25
+  offset: 0, 0
+  index: -1
+foot_1
+  rotate: true
+  xy: 555, 248
+  size: 76, 61
+  orig: 76, 61
+  offset: 0, 0
+  index: -1
+foot_2
+  rotate: true
+  xy: 286, 47
+  size: 106, 57
+  orig: 106, 57
+  offset: 0, 0
+  index: -1
+forearm_1
+  rotate: false
+  xy: 345, 84
+  size: 94, 68
+  orig: 94, 68
+  offset: 0, 0
+  index: -1
+forearm_2
+  rotate: true
+  xy: 618, 268
+  size: 89, 63
+  orig: 89, 63
+  offset: 0, 0
+  index: -1
+glasses_1
+  rotate: false
+  xy: 606, 90
+  size: 74, 41
+  orig: 74, 42
+  offset: 0, 1
+  index: -1
+glasses_2
+  rotate: false
+  xy: 579, 208
+  size: 37, 38
+  orig: 37, 38
+  offset: 0, 0
+  index: -1
+hair_1
+  rotate: false
+  xy: 363, 192
+  size: 115, 51
+  orig: 115, 51
+  offset: 0, 0
+  index: -1
+hair_2
+  rotate: false
+  xy: 483, 99
+  size: 121, 28
+  orig: 121, 28
+  offset: 0, 0
+  index: -1
+hair_3
+  rotate: false
+  xy: 363, 154
+  size: 128, 36
+  orig: 128, 36
+  offset: 0, 0
+  index: -1
+hair_4
+  rotate: true
+  xy: 226, 154
+  size: 93, 40
+  orig: 93, 40
+  offset: 0, 0
+  index: -1
+hair_5
+  rotate: true
+  xy: 603, 426
+  size: 95, 72
+  orig: 95, 72
+  offset: 0, 0
+  index: -1
+hand_1
+  rotate: true
+  xy: 599, 359
+  size: 65, 84
+  orig: 65, 84
+  offset: 0, 0
+  index: -1
+hand_2_1
+  rotate: true
+  xy: 280, 2
+  size: 41, 62
+  orig: 43, 64
+  offset: 1, 1
+  index: -1
+hand_2_2
+  rotate: false
+  xy: 449, 32
+  size: 23, 19
+  orig: 25, 21
+  offset: 1, 1
+  index: -1
+hand_2_3
+  rotate: true
+  xy: 588, 133
+  size: 59, 73
+  orig: 59, 73
+  offset: 0, 0
+  index: -1
+hand_3
+  rotate: false
+  xy: 268, 155
+  size: 93, 88
+  orig: 93, 88
+  offset: 0, 0
+  index: -1
+head
+  rotate: false
+  xy: 2, 15
+  size: 104, 132
+  orig: 104, 132
+  offset: 0, 0
+  index: -1
+leg_1
+  rotate: false
+  xy: 239, 45
+  size: 45, 107
+  orig: 45, 107
+  offset: 0, 0
+  index: -1
+leg_2
+  rotate: true
+  xy: 483, 59
+  size: 38, 90
+  orig: 38, 90
+  offset: 0, 0
+  index: -1
+mouth_1
+  rotate: false
+  xy: 480, 192
+  size: 97, 51
+  orig: 97, 52
+  offset: 0, 1
+  index: -1
+mouth_2
+  rotate: false
+  xy: 516, 22
+  size: 56, 35
+  orig: 56, 35
+  offset: 0, 0
+  index: -1
+mouth_3
+  rotate: true
+  xy: 483, 2
+  size: 55, 31
+  orig: 55, 31
+  offset: 0, 0
+  index: -1
+mouth_4
+  rotate: true
+  xy: 663, 138
+  size: 54, 10
+  orig: 54, 10
+  offset: 0, 0
+  index: -1
+mouth_5
+  rotate: true
+  xy: 441, 90
+  size: 62, 40
+  orig: 62, 40
+  offset: 0, 0
+  index: -1
+mouth_6
+  rotate: false
+  xy: 2, 2
+  size: 50, 11
+  orig: 50, 11
+  offset: 0, 0
+  index: -1
+neck
+  rotate: false
+  xy: 159, 45
+  size: 78, 106
+  orig: 78, 106
+  offset: 0, 0
+  index: -1
+nose
+  rotate: true
+  xy: 622, 53
+  size: 35, 41
+  orig: 35, 41
+  offset: 0, 0
+  index: -1
+shadow
+  rotate: false
+  xy: 279, 245
+  size: 274, 74
+  orig: 276, 76
+  offset: 1, 1
+  index: -1
+thight_1
+  rotate: true
+  xy: 103, 153
+  size: 94, 121
+  orig: 94, 121
+  offset: 0, 0
+  index: -1
+thight_2
+  rotate: true
+  xy: 159, 2
+  size: 41, 119
+  orig: 41, 119
+  offset: 0, 0
+  index: -1
