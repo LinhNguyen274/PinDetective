@@ -1,3 +1,6 @@
+//if(!window['_loaders_']) window['_loaders_'] = []
+
+
 window.boot = function () {
     var settings = window._CCSettings;
     window._CCSettings = undefined;
@@ -8,76 +11,25 @@ window.boot = function () {
     var MAIN = cc.AssetManager.BuiltinBundleName.MAIN;
 
     var percentCurr = 0;
-    var totalCurr = 0;
-    var finishCrr = 0;
-
 
     var preloadInMain = function (scene) {
         if (!checkLoad) {
-            console.log("preloadInMain");
-            let currentLevelId = localStorage.getItem("hp_level");
-            let currentLevelPuzzle = localStorage.getItem("hp_level_puzzle");
-            let currentLevelNormal = localStorage.getItem("hp_level_normal");
-            let preload = [];
-            if (!currentLevelId) {
-                currentLevelNormal = 0;
-                currentLevelPuzzle = 0;
-            }
-            if (currentLevelId % 5 == 0 && currentLevelId != 0) {
-                preload = [`prefabs/levels/Level-${currentLevelPuzzle}`, "prefabs/skin/SkinPopup", "prefabs/rooms/popupRoom", "prefabs/daily/DailyPopup"];
-                // cc.resources.load(`prefabs/levels/Level-${currentLevelPuzzle}`, onProgress4, (error, assets) => {
-                //     console.log("Vao Day 1");
-                //     cc.resources.load("prefabs/skin/SkinPopup", onProgress1, (error, assets) => {
-                //         console.log("1111");
-                //         cc.resources.load("prefabs/rooms/popupRoom", onProgress2, (error, assets) => {
-                //             console.log("2222");
-                //             cc.resources.load("prefabs/daily/DailyPopup", onProgress3, (error, assets) => {
-                //                 // console.log("3333");
-                //                 successProcess(scene);
-                //             });
-                //         });
-                //     });
-                // });
-
-                // });
-            } else {
-                preload = [`prefabs/levels/Level-${currentLevelNormal}`, "prefabs/skin/SkinPopup", "prefabs/rooms/popupRoom", "prefabs/daily/DailyPopup"];
-                // cc.resources.load(`prefabs / levels / Level - ${currentLevelNormal}`, onProgress4, (error, assets) => {
-                //     console.log("Vao Day 2");
-                //     cc.assetManager.resources.load("prefabs/skin/SkinPopup", onProgress1, (error, assets) => {
-                //         console.log("1111");
-                //         cc.assetManager.resources.load("prefabs/rooms/popupRoom", onProgress2, (error, assets) => {
-                //             console.log("2222");
-                //             cc.assetManager.resources.load("prefabs/daily/DailyPopup", onProgress3, (error, assets) => {
-                //                 console.log("3333");
-                //                 successProcess(scene);
-                //             });
-                //         });
-                //     });
-                // });
-            }
-            console.log(preload);
-            cc.resources.load(preload, (finish, total, item) => {
-                let currPercent = 50 + 50 * finish / total;
-                if (window.progressBar) {
-                    progressBar(currPercent)
-                }
-            }, (error, assets) => {
-                Loading.preloadAssets(() => { }, () => {
-                    successProcess(scene);
-                });
-                checkLoad = true;
-            })
-        };
+            console.log("%cPRE DONE LOADING .........................", 'background: #8f1919; color: #00ffd8')
+            Loading.preloadAssets(() => {
+                console.log("%cDONE LOADING ........,..................", 'background: #8f1919; color: #00ffd8')
+                successProcess(scene);
+            });
+            checkLoad = true;
+       };
     }
 
-    function setLoadingDisplay() {
+     function setLoadingDisplay() {
         // Loading splash scene
         var splash = document.getElementById('splash');
         var progressBar2 = splash.querySelector('.progress-bar span');
 
         onProgress = function (finish, total) {
-            var percent = 50 * finish / total;
+            var percent = finish / total;
             if (percentCurr < percent) {
                 percentCurr = percent;
             } else {
@@ -134,20 +86,8 @@ window.boot = function () {
             else if (settings.orientation === 'portrait') {
                 cc.view.setOrientation(cc.macro.ORIENTATION_PORTRAIT);
             }
-            // cc.view.enableAutoFullScreen([
-            //     cc.sys.BROWSER_TYPE_BAIDU,
-            //     cc.sys.BROWSER_TYPE_BAIDU_APP,
-            //     cc.sys.BROWSER_TYPE_WECHAT,
-            //     cc.sys.BROWSER_TYPE_MOBILE_QQ,
-            //     cc.sys.BROWSER_TYPE_MIUI,
-            //     cc.sys.BROWSER_TYPE_HUAWEI,
-            //     cc.sys.BROWSER_TYPE_UC,
-            // ].indexOf(cc.sys.browserType) < 0);
         }
 
-        // Limit downloading max concurrent task to 2,
-        // more tasks simultaneously may cause performance draw back on some android system / browsers.
-        // You can adjust the number based on your own test result, you have to set it before any loading process to take effect.
         if (cc.sys.isBrowser && cc.sys.os === cc.sys.OS_ANDROID) {
             cc.assetManager.downloader.maxConcurrency = 2;
             cc.assetManager.downloader.maxRequestsPerFrame = 2;
@@ -161,11 +101,12 @@ window.boot = function () {
         bundle.loadScene(launchScene, null, onProgress,
             function (err, scene) {
                 if (!err) {
-                    successProcess(scene);
+                    preloadInMain(scene);
                 }
             }
         );
     };
+
 
     var option = {
         id: 'GameCanvas',
