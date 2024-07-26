@@ -14,9 +14,7 @@ window.boot = function () {
 
     var preloadInMain = function (scene) {
         if (!checkLoad) {
-            console.log("%cPRE DONE LOADING .........................", 'background: #8f1919; color: #00ffd8')
             Loading.preloadAssets(() => {
-                console.log("%cDONE LOADING ........,..................", 'background: #8f1919; color: #00ffd8')
                 successProcess(scene);
             });
             checkLoad = true;
@@ -25,29 +23,29 @@ window.boot = function () {
 
      function setLoadingDisplay() {
         // Loading splash scene
-        var splash = document.getElementById('splash');
-        var progressBar2 = splash.querySelector('.progress-bar span');
+        //var splash = document.getElementById('splash');
+        //var progressBar2 = splash.querySelector('.progress-bar span');
 
         onProgress = function (finish, total) {
-            var percent = finish / total;
+            var percent = finish / total * 100;
             if (percentCurr < percent) {
                 percentCurr = percent;
             } else {
                 percentCurr = percentCurr;
             }
             window.getLoadingPerc = function () {
-                return percentCurr
+                return percentCurr;
             }
             if (window.progressBar) {
                 progressBar(percentCurr)
             }
         };
 
-        splash.style.display = 'block';
-        progressBar2.style.width = '0%';
+        //splash.style.display = 'block';
+        //progressBar2.style.width = '0%';
 
         cc.director.once(cc.Director.EVENT_AFTER_SCENE_LAUNCH, function () {
-            splash.style.display = 'none';
+            //splash.style.display = 'none';
         });
 
     };
@@ -148,7 +146,7 @@ window.boot = function () {
 if (window.jsb) {
     var isRuntime = (typeof loadRuntime === 'function');
     if (isRuntime) {
-        require('src/settings.cc04d.js');
+        require('src/settings.4f021.js');
         require('src/cocos2d-runtime.js');
         if (CC_PHYSICS_BUILTIN || CC_PHYSICS_CANNON) {
             require('src/physics.js');
@@ -156,7 +154,7 @@ if (window.jsb) {
         require('jsb-adapter/engine/index.js');
     }
     else {
-        require('src/settings.cc04d.js');
+        require('src/settings.4f021.js');
         require('src/cocos2d-jsb.js');
         if (CC_PHYSICS_BUILTIN || CC_PHYSICS_CANNON) {
             require('src/physics.js');

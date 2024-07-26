@@ -10,7 +10,7 @@ if (isTestModeOn) {
 }
 
 function progressBar(percentage){
-    console.log("Loading Bar :", percentage * 100)
+    console.log("Loading Bar :", percentage)
 }
 
 function sendCustomAnalyticsEvent(eventType, extras) {
