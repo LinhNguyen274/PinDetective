@@ -151,25 +151,27 @@ function rewardedCallbacks(obj) {
         console.log('onAdLoadSucceeded Rewarded CALLBACK', data);
         if (obj.adUnitName === replayObj.adUnitName) {
             is_replay_noFill = false
+            window["_on_ad_load_success_"] && window["_on_ad_load_success_"]()
         }
         if (obj.adUnitName === rewardObj.adUnitName) {
             is_rewarded_noFill = false
+            window["_on_ad_load_success_"] && window["_on_ad_load_success_"]()
         }
 
 
-        window["_on_ad_load_success_"] && window["_on_ad_load_success_"]()
     });
 
     obj.adInstance?.registerCallback('onAdLoadFailed', (data) => {
         console.log('onAdLoadFailed Rewarded CALLBACK', data);
         if (obj.adUnitName === replayObj.adUnitName) {
             is_replay_noFill = true
+            window["_on_ad_load_failed_"] && window["_on_ad_load_failed_"]()
         }
         if (obj.adUnitName === rewardObj.adUnitName) {
             is_rewarded_noFill = true
+            window["_on_ad_load_failed_"] && window["_on_ad_load_failed_"]()
         }
 
-        window["_on_ad_load_failed_"] && window["_on_ad_load_failed_"]()
     });
 
     obj.adInstance?.registerCallback('onAdDisplayed', (data) => {
