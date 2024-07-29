@@ -237,6 +237,7 @@ function runOnAdClosed() {
 // function called on replay button (leaderboard) clicked
 function replayEvent() {
     _triggerReason = 'replay'
+    console.log('Glance Event: replayEvent', _triggerReason, is_replay_noFill);
     if (!is_replay_noFill) {
         window.GlanceGamingAdInterface.showRewarededAd(replayInstance);
     } else {
