@@ -157,6 +157,7 @@ function rewardedCallbacks(obj) {
         }
 
 
+        window["_on_ad_load_success_"] && window["_on_ad_load_success_"]()
     });
 
     obj.adInstance?.registerCallback('onAdLoadFailed', (data) => {
@@ -168,7 +169,7 @@ function rewardedCallbacks(obj) {
             is_rewarded_noFill = true
         }
 
-
+        window["_on_ad_load_failed_"] && window["_on_ad_load_failed_"]()
     });
 
     obj.adInstance?.registerCallback('onAdDisplayed', (data) => {
