@@ -1,4 +1,4 @@
-var gameInput = { gameName: 'HomeIsLand', publisherName: 'Gamee' };
+var gameInput = { gameName: 'PinDetective', publisherName: 'Gamee' };
 
 var queryParams = location.search.substring(1)?.split("&")
 var isTestModeOn = queryParams.find((a) => { return a.startsWith('mode') })?.split("=")[1].toLowerCase() === 'test' ? true : false;
