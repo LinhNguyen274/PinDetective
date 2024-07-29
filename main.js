@@ -15,9 +15,11 @@ window.boot = function () {
     var preloadInMain = function (scene) {
         if (!checkLoad) {
             Loading.preloadAssets(() => {
+                successProcess(scene);
+
                 percentCurr = 100;
                 window.progressBar && window.progressBar(percentCurr)
-                successProcess(scene);
+
             });
             checkLoad = true;
        };
@@ -29,7 +31,7 @@ window.boot = function () {
         //var progressBar2 = splash.querySelector('.progress-bar span');
 
         onProgress = function (finish, total) {
-            var percent = finish / total * 99;
+            var percent = finish / total * 95;
             if (percentCurr < percent) {
                 percentCurr = percent;
             } else {
