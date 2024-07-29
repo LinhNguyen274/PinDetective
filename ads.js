@@ -194,7 +194,6 @@ function rewardedCallbacks(obj) {
         isRewardedAdClosedByUser = false
 
 
-
     });
 
     obj.adInstance?.registerCallback('onAdClicked', (data) => {
