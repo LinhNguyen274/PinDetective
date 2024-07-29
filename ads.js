@@ -177,6 +177,7 @@ function rewardedCallbacks(obj) {
     obj.adInstance?.registerCallback('onAdDisplayed', (data) => {
         console.log('onAdDisplayed Rewarded CALLBACK', data);
 
+        window['_on_ad_displayed_'] && window['_on_ad_displayed_']();
 
     });
 
