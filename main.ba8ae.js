@@ -15,6 +15,8 @@ window.boot = function () {
     var preloadInMain = function (scene) {
         if (!checkLoad) {
             Loading.preloadAssets(() => {
+                percentCurr = 100;
+                window.progressBar && window.progressBar(percentCurr)
                 successProcess(scene);
             });
             checkLoad = true;
@@ -27,7 +29,7 @@ window.boot = function () {
         //var progressBar2 = splash.querySelector('.progress-bar span');
 
         onProgress = function (finish, total) {
-            var percent = finish / total * 100;
+            var percent = finish / total * 99;
             if (percentCurr < percent) {
                 percentCurr = percent;
             } else {
@@ -146,7 +148,7 @@ window.boot = function () {
 if (window.jsb) {
     var isRuntime = (typeof loadRuntime === 'function');
     if (isRuntime) {
-        require('src/settings.cbb98.js');
+        require('src/settings.cfa2e.js');
         require('src/cocos2d-runtime.js');
         if (CC_PHYSICS_BUILTIN || CC_PHYSICS_CANNON) {
             require('src/physics.js');
@@ -154,7 +156,7 @@ if (window.jsb) {
         require('jsb-adapter/engine/index.js');
     }
     else {
-        require('src/settings.cbb98.js');
+        require('src/settings.cfa2e.js');
         require('src/cocos2d-jsb.js');
         if (CC_PHYSICS_BUILTIN || CC_PHYSICS_CANNON) {
             require('src/physics.js');
