@@ -209,6 +209,7 @@ function rewardedCallbacks(obj) {
 }
 // function to be called after ad closes
 function runOnAdClosed() {
+    console.log('Glance Event: runOnAdClosed', _triggerReason);
     if (_triggerReason === 'replay') {
 
         replayDone();
