@@ -126,7 +126,7 @@ function bannerCallbacks(obj) {
     });
 
     obj.adInstance?.registerCallback('onAdLoadFailed', (data) => {
-        console.log('onAdLoadFailed  CALLBACK', data);
+        console.log('onAdLoadFailed CALLBACK', data);
 
 
         if (obj.adUnitName === LBBannerObj.adUnitName) {
@@ -137,15 +137,13 @@ function bannerCallbacks(obj) {
     });
 
     obj.adInstance?.registerCallback('onAdDisplayed', (data) => {
-        console.log('onAdDisplayed  CALLBACK', data);
+        console.log('onAdDisplayed CALLBACK', data);
     });
 
 
 }
 // rewarded ad callbacks
 function rewardedCallbacks(obj) {
-
-
 
     obj.adInstance?.registerCallback('onAdLoadSucceed', (data) => {
         console.log('onAdLoadSucceeded Rewarded CALLBACK', data);
