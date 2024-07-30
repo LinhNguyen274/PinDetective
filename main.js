@@ -55,7 +55,7 @@ window.boot = function () {
     };
 
     var successProcess = function (scene) {
-        console.log("****RUN GAME*****");
+        console.log(">>>> RUN GAME Version: 1");
         cc.director.runSceneImmediate(scene);
         if (cc.sys.isBrowser) {
             // show canvas

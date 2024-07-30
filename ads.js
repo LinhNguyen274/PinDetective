@@ -231,8 +231,7 @@ function runOnAdClosed() {
         }
         _triggerReason = ''
         rewardInstance = window.GlanceGamingAdInterface.loadRewardedAd(rewardObj, rewardedCallbacks);
-
-    }
+    } 
 }
 
 // function called on replay button (leaderboard) clicked
